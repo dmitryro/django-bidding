@@ -11,8 +11,9 @@ setup(name='django-bidding',
       version='1.0',
       description='Django Bidding API',
       author='Dmitry Roitman',
-      install_requires=["Django>=1.10.3"],
+      install_requires=["Django>=1.10.3",
+                        "tensorflow>=0.11.0rc2",
+                        "keras>=1.2.0"],
       packages=find_packages(),
       scripts=['bid_api.py'],
-      
      )
