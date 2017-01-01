@@ -1,0 +1,9 @@
+.swp
+.pyc
+*.pyc
+.*.swp
+.bak
+*.bak
+static
+migrations
+
