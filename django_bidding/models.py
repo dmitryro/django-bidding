@@ -7,9 +7,21 @@ class AuctionType(models.Model):
     auction_type = models.CharField(max_length=100,blank=True,null=True)
     auction_code = models.CharField(max_length=100,blank=True,null=True)
 
+    class Meta:
+        verbose_name = 'Auction Type'
+        verbose_name_plural = 'Auction Types'
+
 # Auction model
 class Auction(models.Model):
     reservation_price = models.FloatField(default=0,blank=True,null=True) 
     auction_type = models.ForeignKey(AuctionType,blank=True,null=True)
     time_started = models.DateTimeField(auto_now_add=True)
     time_ended = models.DateTimeField('Time Ended',blank=True,null=True)
+
+    class Meta:
+        verbose_name = 'Auction'
+        verbose_name_plural = 'Auctions'
+
+
+
+
