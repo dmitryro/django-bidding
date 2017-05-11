@@ -1,4 +1,0 @@
-auction
-bids
-cnn
-players
