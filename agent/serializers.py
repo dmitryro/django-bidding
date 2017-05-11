@@ -1,6 +1,8 @@
 from rest_framework import serializers
 from models import AgentType
 from models import ActionState
+from models import AgentAction
+from models import Agent
 
 
 class AgentTypeSerializer(serializers.Serializer):
@@ -56,3 +58,23 @@ class ActionStateSerializer(serializers.Serializer):
                                                  instance.state_code)
         instance.save()
         return instance
+
+
+class AgentActionSerializer(serializers.Serializer):
+    id = serializers.IntegerField(read_only=True)
+
+    def create(self, validated_data):
+        """
+        Create and return a new `AgentAction` , given the validated data.
+        """
+        return AgentAction.objects.create(**validated_data)
+
+
+class AgentSerializer(serializers.Serializer):
+    id = serializers.IntegerField(read_only=True)
+
+    def create(self, validated_data):
+        """
+        Create and return a new `Agent` , given the validated data.
+        """
+        return Agent.objects.create(**validated_data)
