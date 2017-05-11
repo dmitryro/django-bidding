@@ -1,13 +1,10 @@
-# django-bidding
+# django-medibot
 
-This project is intended to implement different bidding strategies to be reused
-with Django
+This project is an implementation of a medical bot framework based on Django 
 
-* English Auctions
-* Dutch Auctions
-* Japanese Auctions
-* First-Price Auctions
-* Second-Price Auctions
-* All-Pay Auctions
+* API
+* Rules
+* Grammars
+* Dashboard 
 
 

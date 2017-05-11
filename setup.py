@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 
-from django_bidding import __version__
+from django_medibot import __version__
 
 try:
     from setuptools import setup, find_packages
@@ -9,11 +9,11 @@ except ImportError:
     from distutils.core import setup, find_packages
 
 
-setup(name='django-bidding',
-      description='Django Bidding API',
-      author='Dmitry Roitman',
+setup(name='django-medibot',
+      description='Django Medibot API',
+      author='Medical Robotix',
       author_email = "allseeingeye1001@gmail.com",
-      url = "https://github.com/dmitryro/django-bidding", 
+      url = "https://github.com/dmitryro/django-medibot", 
       version=__version__,
 
       install_requires=["Django>=1.10.3",
@@ -21,7 +21,7 @@ setup(name='django-bidding',
                         "keras>=1.2.0"],
        
       packages = [
-        "django_bidding",
+        "django_medibot",
       ],
       classifiers = [
           "Development Status :: 5 - Production/Stable",
@@ -42,5 +42,5 @@ setup(name='django-bidding',
           "Topic :: Software Development :: Libraries",
           "Topic :: Utilities",
       ],
-      scripts=['bid_api.py'],
+      scripts=['medibot_api.py'],
      )
