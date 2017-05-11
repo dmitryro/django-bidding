@@ -18,6 +18,7 @@ setup(name='django-medibot',
 
       install_requires=["Django>=1.10.3",
                         "tensorflow>=0.11.0rc2",
+                        "djangorestframework>=3.4",
                         "keras>=1.2.0"],
        
       packages = [
