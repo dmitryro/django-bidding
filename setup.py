@@ -9,7 +9,7 @@ except ImportError:
     from distutils.core import setup, find_packages
 
 
-setup(name='django-medibot',
+setup(name='django_medibot',
       description='Django Medibot API',
       author='Medical Robotix',
       author_email = "allseeingeye1001@gmail.com",
@@ -24,6 +24,7 @@ setup(name='django-medibot',
       packages = [
         "django_medibot",
       ],
+      namespace_packages=['django_medibot'],
       classifiers = [
           "Development Status :: 5 - Production/Stable",
           "Environment :: Web Environment",
