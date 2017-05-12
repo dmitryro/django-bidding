@@ -1,0 +1,4 @@
+include LICENSE
+include README.rst
+recursive-include agent/static *
+recursive-include agent/templates *

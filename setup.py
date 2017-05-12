@@ -1,12 +1,19 @@
 #!/usr/bin/env python
 
-
+import os
 from django_medibot import __version__
 
 try:
     from setuptools import setup, find_packages
 except ImportError:
     from distutils.core import setup, find_packages
+
+
+with open(os.path.join(os.path.dirname(__file__), 'README.rst')) as readme:
+    README = readme.read()
+
+# allow setup.py to be run from any path
+os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
 
 setup(name='django_medibot',
@@ -21,10 +28,8 @@ setup(name='django_medibot',
                         "djangorestframework>=3.4",
                         "keras>=1.2.0"],
        
-      packages = [
-        "django_medibot",
-      ],
-      namespace_packages=['django_medibot'],
+      packages = find_packages(),
+      #namespace_packages=['django_medibot'],
       classifiers = [
           "Development Status :: 5 - Production/Stable",
           "Environment :: Web Environment",
