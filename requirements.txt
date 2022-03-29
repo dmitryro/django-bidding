@@ -101,7 +101,7 @@ openpyxl==1.7.0
 orderedset==2.0
 PAM==0.4.2
 pandas==0.13.1
-paramiko==2.0.0
+paramiko==2.10.1
 patsy==0.2.1
 pbr==1.10.0
 picklable-itertools==0.1.1
