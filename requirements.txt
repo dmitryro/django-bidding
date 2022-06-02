@@ -76,7 +76,7 @@ funcsigs==1.0.2
 funcy==1.7.1
 gunicorn==19.6.0
 h5py==2.2.1
-html5lib==0.999
+html5lib==0.99999999
 httplib2==0.8
 iotop==0.6
 Jinja2==2.8
