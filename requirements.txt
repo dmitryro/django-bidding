@@ -80,7 +80,7 @@ html5lib==0.999
 httplib2==0.8
 iotop==0.6
 Jinja2==2.8
-joblib==0.7.1
+joblib==1.2.0
 Landscape-Client==14.12
 logilab-common==0.61.0
 lxml==3.3.3
